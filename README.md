@@ -90,8 +90,8 @@ ros2 run multi_dag_demo multi_dag_demo_main
 
 ---
 
-Stress Testing & Tuning
-
+Stress Testing & Tuning:
+```
 Automated tuning and stress runs are available:
 	•	Phase 12 Stress Test: phase12_stress.log
 	•	Phase 15 Configuration Sweep: phase15_sweep.sh
@@ -102,26 +102,28 @@ Default tuned parameters (Phase 16):
 	•	Executor threads: 8
 	•	Deadline scale: 1.1 for all DAGs
 	•	Sensor timers: LiDAR = 20ms, Camera = 30ms
-	
+```	
   ---
 
-  Artifacts & Analysis
-	•	Logs: phase12_stress.log, phase15/logs/
+  Artifacts & Analysis:
+```
+    •	Logs: phase12_stress.log, phase15/logs/
 	•	Summary tables: cross_configuration_table.csv, best_worst_configs.csv, log_extracted_metrics.csv
 	•	Graphs: threads_vs_avg_combined_miss.png, max_active_vs_avg_miss.png, etc.
 	•	Final report: final_report.md
 	•	Reproducibility instructions: REPRODUCE.md
-
+```
 All artifacts allow full reproduction of stress tests, tuning sweeps, and performance analysis.
 
 ---
 
-Notes
+Notes:
+```
 	•	Docker-only workflow ensures reproducibility without local ROS2 installation.
 	•	ARM64 tested: macOS M1/Apple Silicon; works on Linux ARM64.
 	•	Thread pool and DAG concurrency are configurable via environment variables (RP_EXECUTOR_*).
 	•	EDF-style soft-deadline scheduler handles multiple DAGs with per-DAG execution limits and detailed runtime instrumentation.
-	
+```
 ---
 
 Citation / Usage
