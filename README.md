@@ -1,15 +1,15 @@
-ReDAG-RT
+# ReDAG-RT
 
-A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2
+## A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2
 
 Author: Md Mehedi Hasan
 Platform: ROS 2 Humble (Ubuntu 22.04)
 Artifact Type: Reproducible Research Artifact
 Execution Environment: Docker (ARM64 and x86_64)
 
-⸻
+---
 
-Abstract
+## Abstract
 
 ReDAG-RT is a middleware-level scheduling framework for multi-DAG robotic workloads executing in ROS 2. Modern robotic systems frequently execute multiple independent Directed Acyclic Graph (DAG) pipelines such as perception, planning, tracking, and control within a shared executor. The default ROS 2 executor model does not enforce a global priority hierarchy across DAG boundaries, which may introduce cross-DAG interference and response-time variability under load.
 
@@ -17,9 +17,9 @@ This artifact provides a structured executor-level scheduling framework and a fu
 
 The artifact is designed to support reproducible evaluation of middleware-level scheduling semantics in ROS 2.
 
-⸻
+---
 
-1. Motivation
+## 1. Motivation
 
 In ROS 2, callbacks from independent DAG pipelines are scheduled within a shared executor using FIFO ordering or thread availability semantics. No global rate-based priority hierarchy is enforced across DAG boundaries. Under moderate to high utilization, this may result in:
 	•	Cross-DAG scheduling interference
@@ -29,9 +29,9 @@ In ROS 2, callbacks from independent DAG pipelines are scheduled within a shared
 
 ReDAG-RT provides a structured scheduling abstraction to study these behaviors and evaluate alternative dispatch policies under controlled conditions.
 
-⸻
+---
 
-2. Artifact Objectives
+## 2. Artifact Objectives
 
 This artifact enables controlled investigation of:
 	1.	Cross-DAG interference in shared executors
@@ -42,9 +42,9 @@ This artifact enables controlled investigation of:
 
 The focus is executor-level scheduling semantics. Kernel-level real-time guarantees are outside the scope of this artifact.
 
-⸻
+---
 
-3. System Overview
+## 3. System Overview
 
 3.1 Execution Model
 
@@ -61,7 +61,7 @@ Each DAG:
 
 All callbacks compete at the executor dispatch layer.
 
-⸻
+---
 
 3.2 RPExecutor Design
 
@@ -100,16 +100,15 @@ rp_ws/
 
 All experimental artifacts can be regenerated using the provided scripts.
 
-⸻
+---
 
-5. Reproducibility
+## 5. Reproducibility
 
 5.1 Requirements
 	•	Docker Desktop or Docker Engine
 	•	≥ 8 GB RAM recommended
 	•	Linux or macOS host
 	•	No native ROS 2 installation required
-
 
 ---
 
@@ -137,7 +136,7 @@ source install/setup.bash
 
 ---
 
-6. Running the Workload
+## 6. Running the Workload
 
 Default Execution
 ```
@@ -158,7 +157,7 @@ ros2 run multi_dag_demo multi_dag_demo_main
 
 ---
 
-7. Experimental Pipeline
+## 7. Experimental Pipeline
 
 The artifact includes automated evaluation phases:
 ```
@@ -181,7 +180,7 @@ All experiments can be re-executed using the scripts in the scripts/ directory.
 
 ⸻
 
-8. Evaluation Parameters
+## 8. Evaluation Parameters
 
 Key configurable parameters:
 	•	Thread pool size
@@ -194,7 +193,7 @@ These parameters enable systematic sensitivity analysis.
 
 ⸻
 
-9. Experimental Scope and Limitations
+## 9. Experimental Scope and Limitations
 
 Scope
 	•	Middleware-level scheduling behavior
@@ -211,7 +210,7 @@ This artifact does not claim hard real-time guarantees.
 
 ⸻
 
-10. Expected Observations
+## 10. Expected Observations
 
 Under increased concurrency:
 	•	The default executor exhibits higher response-time variance
@@ -222,7 +221,7 @@ The RPExecutor enables structured control over concurrency and systematic measur
 
 ⸻
 
-11. Artifact Reproducibility Checklist
+## 11. Artifact Reproducibility Checklist
 	•	Deterministic container environment
 	•	Fixed ROS 2 distribution (Humble)
 	•	Explicit build instructions
@@ -233,13 +232,17 @@ The RPExecutor enables structured control over concurrency and systematic measur
 
 ⸻
 
-12. Citation
+## 12. Citation
 
 If referencing this artifact:
 
-Md Mehedi Hasan.
+Md Mehedi Hasan
+
 Email: [mehedi.hasan.ict@mbstu.ac.bd](mehedi.hasan.ict@mbtu.ac.bd)
+
 ReDAG-RT: A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2.
+
 GitHub Research Artifact, 2026.
+
 ```https://github.com/Mehedi16009/ros2_multi_dag_rp_scheduler```
 
