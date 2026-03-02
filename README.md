@@ -2,10 +2,10 @@
 
 ## A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2
 
-Author: Md Mehedi Hasan
-Platform: ROS 2 Humble (Ubuntu 22.04)
-Artifact Type: Reproducible Research Artifact
-Execution Environment: Docker (ARM64 and x86_64)
+Author: Md Mehedi Hasan.
+Platform: ROS 2 Humble (Ubuntu 22.04).
+Artifact Type: Reproducible Research Artifact.
+Execution Environment: Docker (ARM64 and x86_64).
 
 ---
 
