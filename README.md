@@ -178,7 +178,7 @@ Evaluation outputs include:
 
 All experiments can be re-executed using the scripts in the scripts/ directory.
 
-⸻
+---
 
 ## 8. Evaluation Parameters
 
@@ -191,7 +191,7 @@ Key configurable parameters:
 
 These parameters enable systematic sensitivity analysis.
 
-⸻
+---
 
 ## 9. Experimental Scope and Limitations
 
@@ -208,7 +208,7 @@ Limitations
 
 This artifact does not claim hard real-time guarantees.
 
-⸻
+---
 
 ## 10. Expected Observations
 
@@ -219,7 +219,7 @@ Under increased concurrency:
 
 The RPExecutor enables structured control over concurrency and systematic measurement of scheduling behavior.
 
-⸻
+---
 
 ## 11. Artifact Reproducibility Checklist
 	•	Deterministic container environment
@@ -230,19 +230,14 @@ The RPExecutor enables structured control over concurrency and systematic measur
 	•	Logged raw traces
 	•	Published summary tables
 
-⸻
+---
 
 ## 12. Citation
 
-If referencing this artifact:
-
-Md Mehedi Hasan
-
-Email: [mehedi.hasan.ict@mbstu.ac.bd](mehedi.hasan.ict@mbtu.ac.bd)
-
-ReDAG-RT: A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2.
-
-GitHub Research Artifact, 2026.
-
+If referencing this artifact: <br>
+Md Mehedi Hasan <br>
+Email: [mehedi.hasan.ict@mbstu.ac.bd](mehedi.hasan.ict@mbtu.ac.bd) <br>
+ReDAG-RT: A Rate-Priority Executor for Multi-DAG Real-Time Execution in ROS 2. <br>
+GitHub Research Artifact, 2026. <br>
 ```https://github.com/Mehedi16009/ros2_multi_dag_rp_scheduler```
 
