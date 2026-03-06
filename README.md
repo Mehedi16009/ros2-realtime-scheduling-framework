@@ -81,8 +81,7 @@ Collected runtime metrics include: <br>
 The implementation isolates executor-level scheduling behavior from application logic to enable repeatable evaluation.
 
 ---
-## Simulation work is ongoing: (not yet finished)
-<img width="700" height="600" alt="Images_3" src="https://github.com/user-attachments/assets/610ce7fa-bce7-4518-9488-6aea1af64b0d" />
+
 
 
 ## Repository Structure
@@ -94,7 +93,7 @@ rp_ws/
 ├── scripts/                      # Automated stress & sweep scripts
 ├── logs/                         # Generated runtime traces
 ├── analysis/                     # Extracted metrics and plots
-├── final_report.md               # Evaluation summary
+├── baseline_smoke/               # ros2 default baseline Evaluation
 ├── REPRODUCE.md                  # Step-by-step reproduction guide
 └── README.md
 ```
@@ -117,8 +116,8 @@ All experimental artifacts can be regenerated using the provided scripts.
 
 Clone the repository:
 ```
-git clone https://github.com/Mehedi16009/ros2_multi_dag_rp_scheduler.git
-cd ros2_multi_dag_rp_scheduler/rp_ws
+git clone https://github.com/Mehedi16009/ros2-realtime-scheduling-framework.git
+cd ros2-realtime-scheduling-framework/rp_ws
 ```
 
 Launch the ROS 2 Humble container:
@@ -126,11 +125,16 @@ Launch the ROS 2 Humble container:
 docker run -it --rm \
   -v $PWD:/root/rp_ws \
   -w /root/rp_ws \
-  arm64v8/ros:humble
+  osrf/ros:humble-desktop
 ```
 Inside the container:
 ```
 source /opt/ros/humble/setup.bash
+
+apt update
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+
 colcon build
 source install/setup.bash
 ```
