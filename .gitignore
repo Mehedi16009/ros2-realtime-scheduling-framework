@@ -3,6 +3,21 @@ build/
 install/
 log/
 
+# Logs, reports, images (commented to allow pushing)
+#*.log
+#*.csv
+#*.png
+
+# Optional reproducibility helper (commented to allow pushing matching scripts)
+#phase*_run*.sh
+
+*.pyc
+*.swp
+.DS_Store# ROS2 build artifacts
+build/
+install/
+log/
+
 # Logs, reports, images
 *.log
 *.csv
