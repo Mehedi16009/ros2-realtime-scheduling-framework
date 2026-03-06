@@ -1,0 +1,7 @@
+run_id,executor_type,threads,num_tasks,period_set,utilization,dag_depth,wcet_variation,duration_sec,warmup_sec,task_id,total_jobs,misses,miss_rate,maximum_response_time_us,maximum_lateness_us,mean_response_time_us,stddev_response_time_us,p99_response_time_us,total_attempts,skipped_due_dependency
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,0,729,729,1.000000,18153,7153,16008.311385,681.374544,17915.000000,909,0
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,1,472,448,0.949153,19886,2886,17732.608051,589.403327,19545.000000,588,0
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,2,349,0,0.000000,21604,-1395,19572.584527,534.839520,21072.000000,435,0
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,3,259,0,0.000000,26532,-4467,23495.096525,721.161935,25320.000000,322,0
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,4,187,0,0.000000,28961,-14038,26359.171123,696.178472,28915.000000,232,0
+smoke_multi4,multi,4,6,nonharmonic,0.800000,4,0.100000,8,2,5,136,0,0.000000,33151,-25848,30384.977941,859.641773,32682.000000,169,0
