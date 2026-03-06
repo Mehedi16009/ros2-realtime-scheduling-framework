@@ -1,0 +1,3 @@
+executor_label,utilization,avg_miss_rate,avg_max_lateness_us,avg_mean_stddev_response_us
+multi_4,0.8,0.5520637898686679,7153.0,680.4332618333333
+single,0.6,0.7483917083631165,1764841.0,118218.83102683333
