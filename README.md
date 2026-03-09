@@ -46,13 +46,13 @@ The focus is executor-level scheduling semantics. Kernel-level real-time guarant
 
 3.1 Execution Model
 
-The workload consists of multiple independent DAG pipelines:
+The workload consists of multiple independent DAG pipelines:<br>
 	•	Sensor DAG (e.g., LiDAR, Camera) <br>
 	•	Perception / Detection DAG <br>
 	•	Planning / Tracking DAG <br>
 	•	Control DAG
 
-Each DAG:
+Each DAG:<br>
 	•	Is composed of timer-triggered callbacks <br>
 	•	Enforces internal precedence constraints <br>
 	•	Shares a common ROS 2 executor
@@ -104,7 +104,7 @@ All experimental artifacts can be regenerated using the provided scripts.
 
 ## 5. Reproducibility
 
-5.1 Requirements
+5.1 Requirements <br>
 	•	Docker Desktop or Docker Engine <br>
 	•	≥ 8 GB RAM recommended <br>
 	•	Linux or macOS host <br>
